@@ -1,0 +1,12 @@
+stages:
+  - test
+
+eslint:
+  stage: test
+  image: node:19
+  script:
+  - npm install
+  - npm run lint
+  artifacts:
+    path:
+      - eslint-report.xml
