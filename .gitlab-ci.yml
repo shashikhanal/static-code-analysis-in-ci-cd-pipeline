@@ -8,5 +8,5 @@ eslint:
   - npm install
   - npm run lint
   artifacts:
-    path:
+    paths:
       - eslint-report.xml
